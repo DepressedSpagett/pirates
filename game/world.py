@@ -35,7 +35,7 @@ class World (context.Context):
         self.locs[self.homex][self.homey] = homeport.HomePort (self.homex, self.homey, self)
 
         #Add new islands to this list:
-        island_list = [island.Island]
+        island_list = [island.Island, coolplaces.Island,KraggyRockIsland.KraggyRockIsland]
         for cur_island in island_list:
             placed = False
             while placed == False:
